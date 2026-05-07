@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mintytech | 越谷市のITパートナー</title>
+<meta name="description" content="Mintytechは埼玉県越谷市を拠点に、Web制作・LP制作・SaaS開発で中小企業・個人事業主のビジネスを加速させるITパートナーです。無料相談受付中。">
+<meta property="og:title" content="Mintytech | 越谷市のITパートナー">
+<meta property="og:description" content="Web制作・SaaS開発で事業の成長をサポート。越谷市を拠点に全国対応。無料相談・お見積もりはお気軽に。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mintytech.jp/">
+<meta property="og:image" content="https://mintytech.jp/assets/_preview_all.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mintytech.jp/assets/_preview_all.png">
+<link rel="canonical" href="https://mintytech.jp/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Mintytech",
+  "url": "https://mintytech.jp/",
+  "email": "mintytech.aono@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "埼玉県",
+    "addressLocality": "越谷市",
+    "addressCountry": "JP"
+  },
+  "areaServed": "日本全国",
+  "description": "Mintytechは埼玉県越谷市を拠点に、Web制作・LP制作・SaaS開発で中小企業・個人事業主のビジネスを加速させるITパートナーです。",
+  "priceRange": "¥30,000〜",
+  "openingHours": "Mo-Fr 10:00-18:00",
+  "serviceType": ["Web制作", "LP制作", "SaaS開発", "業務システム開発"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --mint-50:#eef8f3;
+  --mint-100:#d8efe5;
+  --mint-200:#b6e2d2;
+  --mint-300:#7cd0b6;
+  --mint-400:#5cc4a6;
+  --mint-500:#46b89a;
+  --brown-700:#3d2418;
+  --brown-800:#2d1a10;
+  --ink:#2a3a33;
+  --ink-soft:#6a7a72;
+  --bg:#ffffff;
+  --bg-soft:#f5faf7;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+  color:var(--ink);background:#fff;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ---- Header ---- */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(8px);
+}
+.header-inner{
+  max-width:1280px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 40px;
+}
+.logo{display:flex;align-items:baseline;gap:14px}
+.logo-name{
+  font-family:"Quicksand",sans-serif;font-weight:700;
+  font-size:30px;color:var(--brown-800);letter-spacing:.5px;
+}
+.logo-name::before{content:"'";color:var(--mint-500);margin-right:1px}
+.logo-sub{font-size:11px;color:var(--ink-soft);letter-spacing:.05em}
+.nav{display:flex;align-items:center;gap:34px}
+.nav a{font-size:14px;font-weight:500;color:var(--ink)}
+.nav a:hover{color:var(--mint-500)}
+.nav .btn-cta,.nav .btn-cta:hover{color:#fff}
+.btn-cta{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--brown-700);color:#fff;
+  padding:12px 22px;border-radius:999px;font-weight:700;font-size:14px;
+  box-shadow:0 6px 14px rgba(61,36,24,.18);
+}
+.btn-cta .arr{
+  width:22px;height:22px;border-radius:50%;background:#fff;color:var(--brown-700);
+  display:grid;place-items:center;font-size:12px;
+}
+
+/* ---- Hero ---- */
+.hero{
+  position:relative;overflow:hidden;
+  padding:30px 0 80px;
+}
+.hero-bg-shape-l{
+  position:absolute;left:-80px;top:60px;width:300px;height:280px;
+  background:var(--mint-100);border-radius:60% 40% 55% 45% / 50% 60% 40% 50%;
+  z-index:0;
+}
+.hero-bg-shape-r{
+  position:absolute;right:-100px;bottom:30px;width:260px;height:240px;
+  background:var(--mint-100);border-radius:55% 45% 60% 40% / 45% 55% 45% 55%;
+  z-index:0;
+}
+.hero-inner{
+  max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1.05fr;gap:30px;align-items:center;
+  padding:0 40px;position:relative;z-index:1;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;color:var(--ink);margin-bottom:18px;
+}
+.hero-eyebrow::before{
+  content:"";display:inline-block;width:36px;height:1px;background:var(--brown-800);
+}
+.hero h1{
+  font-size:54px;font-weight:900;line-height:1.35;
+  color:var(--brown-800);margin:0 0 24px;letter-spacing:.02em;
+}
+.hero h1 .accent{color:var(--mint-500)}
+.hero h1 .quote{font-size:64px;letter-spacing:0}
+.hero p.lead{
+  font-size:14px;color:var(--ink);margin:0 0 36px;line-height:2;
+}
+.hero-actions{display:flex;gap:16px;align-items:center}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:14px;
+  background:var(--brown-700);color:#fff;
+  padding:18px 36px;border-radius:999px;font-weight:700;font-size:15px;
+  box-shadow:0 12px 24px rgba(61,36,24,.22);
+}
+.btn-primary .ic{
+  width:24px;height:24px;display:grid;place-items:center;
+}
+.btn-secondary{
+  display:inline-flex;align-items:center;gap:12px;
+  border:2px solid var(--mint-300);color:var(--mint-500);
+  padding:16px 30px;border-radius:999px;font-weight:700;font-size:15px;
+  background:#fff;
+}
+.btn-secondary .ic{width:18px;height:18px}
+
+.hero-visual{
+  position:relative;height:560px;
+}
+.hero-mint-bg{
+  position:absolute;inset:0 -20px 0 0;
+  background:#a8dcc7;
+  border-radius:30px;
+  background-image:
+    radial-gradient(circle at 30% 40%, #3d2418 4px, transparent 5px),
+    radial-gradient(circle at 60% 70%, #3d2418 5px, transparent 6px),
+    radial-gradient(circle at 80% 30%, #3d2418 3px, transparent 4px),
+    radial-gradient(circle at 20% 75%, #3d2418 4px, transparent 5px),
+    radial-gradient(circle at 70% 20%, #3d2418 3px, transparent 4px),
+    radial-gradient(circle at 45% 85%, #3d2418 4px, transparent 5px),
+    radial-gradient(circle at 90% 60%, #3d2418 3px, transparent 4px),
+    radial-gradient(circle at 10% 30%, #3d2418 3px, transparent 4px);
+}
+.hero-cone{
+  position:absolute;top:20px;left:50%;transform:translateX(-50%);
+  height:540px;width:auto;
+  filter:drop-shadow(0 20px 30px rgba(60,40,30,.22));
+}
+.hero-bubble{
+  position:absolute;right:-10px;bottom:90px;
+  width:130px;height:130px;border-radius:50%;
+  background:var(--brown-700);color:#fff;
+  display:grid;place-items:center;text-align:center;
+  font-size:14px;font-weight:700;line-height:1.6;
+  border:2px dashed rgba(255,255,255,.2);
+  box-shadow:0 12px 24px rgba(60,40,30,.25);
+}
+.hero-bubble::before{
+  content:"";position:absolute;inset:-2px;border-radius:50%;
+  border:2px solid var(--brown-700);
+  -webkit-mask:radial-gradient(circle at 50% 50%, transparent 60%, #000 61%);
+}
+.hero-waves{
+  position:absolute;right:30px;bottom:30px;width:80px;
+}
+.hero-dots{
+  position:absolute;left:-30px;top:200px;font-size:0;
+}
+.hero-dots span{
+  display:inline-block;width:10px;height:10px;border-radius:50%;
+  background:var(--mint-200);margin:4px;
+}
+
+/* ---- Section base ---- */
+.section{position:relative;padding:90px 0 100px;overflow:hidden}
+.section-num{
+  position:absolute;top:30px;left:50px;
+  font-family:"Quicksand",sans-serif;font-weight:700;
+  font-size:80px;color:var(--mint-200);line-height:1;letter-spacing:0;
+}
+.section-title{
+  text-align:center;font-size:34px;font-weight:900;color:var(--brown-800);
+  margin:0 0 50px;letter-spacing:.02em;
+}
+.section-title-left{
+  font-size:34px;font-weight:900;color:var(--brown-800);margin:0 0 36px;
+}
+
+/* ---- Services (02) ---- */
+.services{background:var(--bg-soft)}
+.services-inner{
+  max-width:1100px;margin:0 auto;padding:0 40px;
+  display:grid;grid-template-columns:1fr 1fr;gap:30px 50px;align-items:center;
+  position:relative;
+}
+.services .blob-l{
+  position:absolute;left:-80px;top:80px;width:280px;height:240px;
+  background:var(--mint-100);
+  border-radius:60% 40% 55% 45% / 50% 60% 40% 50%;
+  z-index:0;
+}
+.services .blob-r{
+  position:absolute;right:-80px;top:280px;width:280px;height:220px;
+  background:var(--mint-100);
+  border-radius:50% 50% 60% 40% / 60% 40% 60% 40%;
+  z-index:0;
+}
+.svc-mock{
+  position:relative;z-index:1;border-radius:14px;overflow:hidden;
+  aspect-ratio:5/4;
+  box-shadow:0 12px 28px rgba(50,80,70,.12);
+  background:#f0f0e8 center/cover no-repeat;
+}
+.svc-mock-1{background-image:url("https://images.unsplash.com/photo-1555421689-491a97ff2040?w=800&q=80")}
+.svc-mock-2{background-image:url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80")}
+.svc-content{position:relative;z-index:1}
+.svc-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.svc-head .ic{
+  width:60px;height:60px;flex-shrink:0;border-radius:50%;
+  background:var(--mint-300);color:#fff;font-size:26px;
+  display:grid;place-items:center;
+  box-shadow:0 6px 14px rgba(70,184,154,.25);
+}
+.svc-head .ic i{line-height:1}
+.svc-head h3{margin:0;font-size:24px;font-weight:900;color:var(--brown-800)}
+.svc-content p{font-size:14px;color:var(--ink);margin:0 0 16px}
+.svc-list{list-style:none;padding:0;margin:0}
+.svc-list li{
+  font-size:13px;padding:6px 0 6px 26px;position:relative;color:var(--ink);
+}
+.svc-list li::before{
+  content:"✓";position:absolute;left:0;top:6px;
+  width:18px;height:18px;border-radius:50%;
+  background:var(--mint-500);color:#fff;font-size:10px;font-weight:700;
+  display:grid;place-items:center;
+}
+.svc-divider{
+  grid-column:1/-1;height:1px;background:transparent;
+  border-top:1px dashed #c7d8d0;margin:0;
+}
+
+/* ---- Portfolio (03) ---- */
+.portfolio{background:#fff}
+.portfolio-inner{max-width:1180px;margin:0 auto;padding:0 40px;position:relative}
+.pf-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:24px;
+}
+.pf-item{text-align:center}
+.pf-thumb{
+  border-radius:14px;overflow:hidden;aspect-ratio:4/3;
+  background:#eef0e8 center/cover no-repeat;
+  box-shadow:0 8px 18px rgba(50,80,70,.1);
+  margin-bottom:14px;position:relative;
+}
+.pf-thumb-1{background-image:url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80")}
+.pf-thumb-2{background-image:url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80")}
+.pf-thumb-3{background-image:url("https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80")}
+.pf-thumb-4{background-image:url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80")}
+.pf-thumb-5{background-image:url("https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80")}
+.pf-title{font-size:13px;font-weight:700;color:var(--brown-800);margin-bottom:8px;line-height:1.5}
+.pf-tag{
+  display:inline-block;font-size:11px;color:var(--mint-500);
+  background:var(--mint-50);border:1px solid var(--mint-200);
+  padding:3px 12px;border-radius:999px;font-weight:700;
+}
+.pf-more{text-align:center;margin-top:36px}
+.btn-outline-mint{
+  display:inline-flex;align-items:center;gap:10px;
+  border:2px solid var(--mint-300);color:var(--mint-500);
+  padding:12px 26px;border-radius:999px;font-weight:700;font-size:14px;
+  background:#fff;
+}
+.btn-outline-mint .arr{
+  width:20px;height:20px;border-radius:50%;background:var(--mint-200);
+  display:grid;place-items:center;color:var(--mint-500);font-size:12px;
+}
+
+/* ---- Strength (04) ---- */
+.strength{background:#fff;padding-top:60px}
+.strength-inner{
+  max-width:1180px;margin:0 auto;padding:0 40px;
+  display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;
+  position:relative;
+}
+.strength-feats{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:30px 24px;margin-top:20px;
+}
+.sf{display:flex;flex-direction:column;align-items:center;text-align:center}
+.sf .ic{
+  width:88px;height:88px;margin-bottom:14px;
+  border-radius:50%;background:var(--mint-300);
+  display:grid;place-items:center;
+  box-shadow:0 10px 18px rgba(70,184,154,.25);
+  color:#fff;font-size:36px;
+}
+.sf .ic i{line-height:1}
+.sf .ttl{font-size:16px;font-weight:900;color:var(--brown-800);margin-bottom:6px}
+.sf .desc{font-size:12px;color:var(--ink-soft);line-height:1.7}
+.strength-visual{
+  position:relative;
+}
+.strength-visual img{
+  width:100%;border-radius:20px;
+  filter:drop-shadow(0 16px 30px rgba(60,40,30,.22));
+}
+
+/* ---- Price (05) ---- */
+.price{background:var(--bg-soft)}
+.price-inner{
+  max-width:1100px;margin:0 auto;padding:0 40px;position:relative;
+}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:980px;margin:0 auto}
+.p-card{
+  background:#fff;border-radius:18px;padding:30px 22px 22px;position:relative;
+  border:1px solid #e8efea;
+  box-shadow:0 8px 18px rgba(50,80,70,.06);
+}
+.p-card.featured{border:2px solid var(--mint-300);box-shadow:0 14px 28px rgba(70,184,154,.18)}
+.p-pop{
+  position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  background:var(--mint-300);color:#fff;font-size:11px;font-weight:700;
+  padding:5px 16px;border-radius:999px;letter-spacing:.05em;
+}
+.p-name{text-align:center;font-size:16px;font-weight:900;color:var(--brown-800)}
+.p-price{
+  text-align:center;font-family:"Quicksand",sans-serif;font-weight:700;
+  font-size:30px;color:var(--brown-800);margin:6px 0 14px;
+}
+.p-price small{font-size:14px;color:var(--ink-soft);font-weight:500}
+.p-desc{text-align:center;font-size:11px;color:var(--ink-soft);margin-bottom:14px;line-height:1.6}
+.p-list{list-style:none;padding:0;margin:0 0 18px;border-top:1px dashed #e2e2dc;padding-top:14px}
+.p-list li{
+  font-size:12px;padding:5px 0 5px 22px;position:relative;color:var(--ink);
+}
+.p-list li::before{
+  content:"✓";position:absolute;left:0;top:6px;width:14px;height:14px;border-radius:50%;
+  background:var(--mint-100);color:var(--mint-500);font-size:9px;font-weight:700;
+  display:grid;place-items:center;
+}
+.p-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;padding:11px 14px;border-radius:999px;
+  border:1.5px solid var(--mint-300);color:var(--mint-500);
+  font-weight:700;font-size:13px;background:#fff;cursor:pointer;
+}
+.p-btn .arr{width:18px;height:18px;border-radius:50%;background:var(--mint-200);display:grid;place-items:center;font-size:10px}
+.price-note{
+  grid-column:1/-1;text-align:center;font-size:11px;color:var(--ink-soft);
+  margin-top:20px;
+}
+.price-melt{
+  position:absolute;right:-30px;top:80px;width:140px;
+}
+.price-cta-card{
+  margin:34px auto 0;
+  width:160px;height:160px;border-radius:50%;
+  background:var(--brown-700);color:#fff;
+  display:grid;place-items:center;text-align:center;
+  font-size:14px;font-weight:700;line-height:1.6;
+  position:relative;
+}
+.price-cta-card::before{
+  content:"";position:absolute;inset:6px;border-radius:50%;
+  border:1px dashed rgba(255,255,255,.4);
+}
+
+/* ---- FAQ (06) ---- */
+.faq{background:#fff}
+.faq-inner{
+  max-width:1180px;margin:0 auto;padding:0 40px;
+  display:grid;grid-template-columns:1fr 2.2fr;gap:40px;align-items:start;position:relative;
+}
+.faq-leaves{
+  position:relative;height:280px;
+  background:url("https://www.svgrepo.com/show/495993/mint-leaf.svg") center/contain no-repeat;
+}
+.faq-list{display:flex;flex-direction:column;gap:12px}
+.faq-item{
+  background:#fff;border:1px solid #e8efea;border-radius:14px;
+  padding:18px 24px;cursor:pointer;
+  box-shadow:0 4px 10px rgba(50,80,70,.04);
+}
+.faq-row{display:flex;align-items:center;gap:16px}
+.faq-q{
+  font-family:"Quicksand",sans-serif;color:var(--mint-500);font-weight:700;font-size:18px;
+  width:22px;flex-shrink:0;
+}
+.faq-text{flex:1;font-size:14px;font-weight:700;color:var(--brown-800)}
+.faq-toggle{
+  width:24px;height:24px;border-radius:50%;background:var(--mint-100);color:var(--mint-500);
+  display:grid;place-items:center;font-size:14px;font-weight:300;flex-shrink:0;
+  transition:transform .2s ease;
+}
+.faq-item.open .faq-toggle{transform:rotate(45deg)}
+.faq-answer{
+  display:none;padding:14px 0 0 38px;font-size:13px;color:var(--ink-soft);line-height:1.85;
+}
+.faq-answer .a{color:var(--mint-500);font-family:"Quicksand",sans-serif;font-weight:700;margin-right:10px}
+.faq-item.open .faq-answer{display:flex;align-items:flex-start}
+
+/* ---- Final CTA (07) ---- */
+.final{
+  background:linear-gradient(180deg,#fff 0%,var(--mint-200) 80%);
+  padding:90px 0 0;position:relative;overflow:hidden;
+}
+.final-inner{
+  max-width:1180px;margin:0 auto;padding:0 40px;
+  display:grid;grid-template-columns:80px 1fr 1fr 240px;gap:30px;align-items:center;
+  position:relative;z-index:1;
+}
+.final-num{
+  font-family:"Quicksand",sans-serif;font-weight:700;font-size:80px;
+  color:var(--mint-300);line-height:1;
+}
+.final-text{font-size:14px;color:var(--ink)}
+.final-headline{
+  font-size:24px;font-weight:900;color:var(--brown-800);
+  display:flex;align-items:center;gap:14px;
+}
+.final-arrow{
+  width:40px;height:40px;border-radius:50%;background:#fff;color:var(--brown-700);
+  display:grid;place-items:center;font-size:18px;
+}
+.final-cta{
+  display:inline-flex;align-items:center;gap:14px;
+  background:var(--brown-700);color:#fff;
+  padding:20px 38px;border-radius:999px;font-weight:700;font-size:16px;
+  box-shadow:0 14px 28px rgba(61,36,24,.25);
+}
+.final-cup{
+  position:relative;
+  width:240px;
+}
+.final-cup img{width:100%;filter:drop-shadow(0 14px 24px rgba(60,40,30,.25))}
+.final::before{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:60%;
+  background:radial-gradient(ellipse at 80% 100%, var(--mint-300) 0%, transparent 60%);
+}
+
+footer{background:#fff;color:var(--ink-soft);padding:34px 0 24px;border-top:1px solid #eee}
+.foot{
+  max-width:1280px;margin:0 auto;padding:0 40px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.foot .nav a{color:var(--ink);font-size:13px}
+.foot .right{display:flex;align-items:center;gap:24px}
+.copy{
+  text-align:left;font-size:11px;color:#a39790;
+  max-width:1280px;margin:14px auto 0;padding:0 40px;
+}
+.foot-cta{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--brown-700);color:#fff;
+  padding:12px 22px;border-radius:999px;font-weight:700;font-size:13px;
+}
+.foot-cta .arr{
+  width:20px;height:20px;border-radius:50%;background:#fff;color:var(--brown-700);
+  display:grid;place-items:center;font-size:12px;
+}
+
+@media (max-width: 980px){
+  .nav{display:none}
+  .hero-inner,.services-inner,.strength-inner,.price-inner,.faq-inner,.final-inner,.foot,
+  .contact-inner{
+    grid-template-columns:1fr;
+  }
+  .hero h1{font-size:36px}
+  .pf-grid{grid-template-columns:repeat(2,1fr)}
+  .price-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
+
+/* ---- Contact (08) ---- */
+.contact{background:var(--bg-soft)}
+.contact-inner{
+  max-width:1100px;margin:0 auto;padding:0 40px;
+  display:grid;grid-template-columns:1fr 1.7fr;gap:60px;align-items:start;
+}
+.contact-info-lead{font-size:14px;color:var(--ink);line-height:2;margin:0 0 32px}
+.contact-detail{display:flex;flex-direction:column;gap:14px}
+.contact-row{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--ink)}
+.contact-row .ic{
+  width:44px;height:44px;border-radius:50%;background:var(--mint-300);color:#fff;
+  display:grid;place-items:center;font-size:18px;flex-shrink:0;
+}
+.contact-form{
+  background:#fff;border-radius:20px;padding:36px 32px;
+  box-shadow:0 10px 28px rgba(50,80,70,.08);
+}
+.form-group{margin-bottom:18px}
+.form-label{display:block;font-size:13px;font-weight:700;color:var(--brown-800);margin-bottom:7px}
+.form-label .req{color:var(--mint-500);margin-left:4px;font-size:11px}
+.form-input,.form-select,.form-textarea{
+  width:100%;padding:12px 16px;border:1.5px solid #e2ece7;border-radius:10px;
+  font-family:inherit;font-size:14px;color:var(--ink);background:#fff;
+  transition:border-color .2s ease,box-shadow .2s ease;outline:none;
+  appearance:none;-webkit-appearance:none;
+}
+.form-input:focus,.form-select:focus,.form-textarea:focus{
+  border-color:var(--mint-400);box-shadow:0 0 0 3px rgba(92,196,166,.15);
+}
+.form-textarea{resize:vertical;min-height:130px;line-height:1.75}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-select-wrap{position:relative}
+.form-select-wrap::after{
+  content:"▾";position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  color:var(--ink-soft);pointer-events:none;font-size:13px;
+}
+.form-submit{
+  width:100%;padding:15px;border-radius:999px;border:none;cursor:pointer;
+  background:var(--brown-700);color:#fff;font-weight:700;font-size:15px;
+  font-family:inherit;
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  box-shadow:0 10px 22px rgba(61,36,24,.22);
+  transition:transform .2s ease,box-shadow .2s ease;margin-top:6px;
+}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(61,36,24,.3)}
+.form-submit .arr{
+  width:24px;height:24px;border-radius:50%;background:#fff;color:var(--brown-700);
+  display:grid;place-items:center;font-size:13px;
+}
+.form-note{text-align:center;font-size:11px;color:var(--ink-soft);margin-top:12px;line-height:1.8}
+.form-success{
+  display:none;text-align:center;padding:32px;
+  color:var(--mint-500);font-weight:700;font-size:16px;
+}
+.form-success .check{font-size:48px;margin-bottom:12px}
+
+/* ---- Animations ---- */
+@keyframes heroFloat {
+  0%,100%{margin-top:0}
+  50%{margin-top:-18px}
+}
+@keyframes bubbleFloat {
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+@keyframes blobMorph1 {
+  0%,100%{border-radius:60% 40% 55% 45% / 50% 60% 40% 50%}
+  50%{border-radius:45% 55% 42% 58% / 58% 42% 55% 45%}
+}
+@keyframes blobMorph2 {
+  0%,100%{border-radius:55% 45% 60% 40% / 45% 55% 45% 55%}
+  50%{border-radius:42% 58% 48% 52% / 55% 45% 58% 42%}
+}
+.hero-cone{animation:heroFloat 4s ease-in-out infinite}
+.hero-bubble{animation:bubbleFloat 3.5s ease-in-out infinite}
+.hero-bg-shape-l{animation:blobMorph1 9s ease-in-out infinite}
+.hero-bg-shape-r{animation:blobMorph2 11s ease-in-out infinite}
+
+/* Header scroll shadow */
+.header{transition:box-shadow .3s ease}
+.header.scrolled{box-shadow:0 2px 20px rgba(50,80,70,.1)}
+
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s cubic-bezier(.25,.46,.45,.94),transform .65s cubic-bezier(.25,.46,.45,.94)}
+.reveal.from-left{transform:translateX(-28px)}
+.reveal.from-right{transform:translateX(28px)}
+.reveal.visible{opacity:1 !important;transform:none !important}
+
+/* Button hovers */
+.btn-primary,.btn-cta,.final-cta,.foot-cta{transition:transform .2s ease,box-shadow .2s ease}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(61,36,24,.3)}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(61,36,24,.28)}
+.final-cta:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(61,36,24,.32)}
+.btn-secondary{transition:transform .2s ease,background .2s ease}
+.btn-secondary:hover{transform:translateY(-2px);background:var(--mint-50)}
+
+/* Portfolio hover */
+.pf-thumb{transition:transform .3s ease,box-shadow .3s ease}
+.pf-item:hover .pf-thumb{transform:translateY(-6px) scale(1.03);box-shadow:0 16px 32px rgba(50,80,70,.18)}
+
+/* Price card hover */
+.p-card{transition:transform .25s ease,box-shadow .25s ease}
+.p-card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(50,80,70,.13)}
+.p-card.featured:hover{box-shadow:0 22px 42px rgba(70,184,154,.3)}
+
+/* Strength icon hover */
+.sf .ic{transition:transform .25s ease,box-shadow .25s ease}
+.sf:hover .ic{transform:scale(1.12) rotate(-5deg);box-shadow:0 16px 28px rgba(70,184,154,.38)}
+
+/* ---- Hamburger & Mobile Nav ---- */
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;
+  background:none;border:none;
+}
+.hamburger span{
+  display:block;width:24px;height:2px;
+  background:var(--brown-800);border-radius:2px;
+  transition:transform .3s ease,opacity .3s ease;
+}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{
+  display:none;position:fixed;inset:0;
+  background:rgba(255,255,255,0.97);
+  z-index:45;flex-direction:column;
+  align-items:center;justify-content:center;gap:32px;
+  backdrop-filter:blur(8px);
+}
+.mobile-nav.open{display:flex}
+.mobile-nav a{
+  font-size:20px;font-weight:700;color:var(--brown-800);
+}
+.mobile-nav a:hover{color:var(--mint-500)}
+.mobile-nav .btn-cta{font-size:16px;padding:14px 28px;color:#fff}
+@media(max-width:980px){.hamburger{display:flex}}
+
+/* ---- Form error state ---- */
+.form-input.error,.form-select.error,.form-textarea.error{
+  border-color:#e57373;
+}
+.form-error-msg{
+  display:none;text-align:center;padding:14px;
+  color:#e57373;font-size:13px;font-weight:700;
+}
+.form-error-msg.visible{display:block}
+.form-submit:disabled{opacity:.6;cursor:not-allowed;transform:none !important}
+
+/* ---- Privacy Policy Modal ---- */
+.modal-overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,0.5);z-index:200;
+  align-items:center;justify-content:center;padding:20px;
+}
+.modal-overlay.open{display:flex}
+.modal-box{
+  background:#fff;border-radius:16px;
+  padding:32px;max-width:600px;width:100%;
+  max-height:80vh;overflow-y:auto;
+  box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+.modal-close{
+  float:right;cursor:pointer;
+  font-size:22px;color:var(--ink-soft);
+  background:none;border:none;line-height:1;
+}
+.modal-box h3{margin:0 0 16px;color:var(--brown-800);font-size:18px}
+.modal-box p,.modal-box li{font-size:13px;color:var(--ink);line-height:1.85;margin:0 0 10px}
+.modal-box ul{padding-left:20px}
+
+/* FAQ smooth accordion */
+.faq-item{transition:box-shadow .2s ease}
+.faq-item:hover{box-shadow:0 6px 20px rgba(50,80,70,.09)}
+.faq-answer{
+  display:flex !important;align-items:flex-start;
+  max-height:0;overflow:hidden;padding-top:0 !important;opacity:0;
+  transition:max-height .38s ease,padding .3s ease,opacity .3s ease
+}
+.faq-item.open .faq-answer{max-height:150px;padding-top:14px !important;opacity:1}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <span class="logo-name">Mintytech</span>
+      <span class="logo-sub">越谷市のITパートナー</span>
+    </a>
+    <nav class="nav">
+      <a href="#services">サービス</a>
+      <a href="#portfolio">制作実績</a>
+      <a href="#strength">強み</a>
+      <a href="#price">料金</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">お問い合わせ</a>
+      <a class="btn-cta" href="#contact">無料で相談する<span class="arr">→</span></a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav Overlay -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#services" class="mobile-nav-link">サービス</a>
+  <a href="#portfolio" class="mobile-nav-link">制作実績</a>
+  <a href="#strength" class="mobile-nav-link">強み</a>
+  <a href="#price" class="mobile-nav-link">料金</a>
+  <a href="#faq" class="mobile-nav-link">FAQ</a>
+  <a class="btn-cta" href="#contact">無料で相談する<span class="arr">→</span></a>
+</nav>
+
+<!-- Privacy Policy Modal -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal-box">
+    <button class="modal-close" id="privacyClose">×</button>
+    <h3>プライバシーポリシー</h3>
+    <p>Mintytech（以下「当社」）は、お問い合わせフォームを通じてご提供いただいた個人情報を、以下の方針に従って取り扱います。</p>
+    <ul>
+      <li><strong>利用目的：</strong>お問い合わせへの回答、お見積もりのご提案、サービスに関するご連絡のみに使用します。</li>
+      <li><strong>第三者への提供：</strong>法令に基づく場合を除き、ご本人の同意なく第三者に提供することはありません。</li>
+      <li><strong>安全管理：</strong>個人情報の漏洩・紛失・改ざんを防ぐため、適切な安全対策を実施します。</li>
+      <li><strong>開示・訂正・削除：</strong>ご本人からのご要望があれば、速やかに対応いたします。</li>
+      <li><strong>お問い合わせ：</strong>mintytech.aono@gmail.com</li>
+    </ul>
+    <p style="margin-top:16px;font-size:12px;color:var(--ink-soft)">制定日：2025年1月</p>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg-shape-l"></div>
+  <div class="hero-bg-shape-r"></div>
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">Web制作 × SaaS開発で事業の成長をサポート</span>
+      <h1>
+        ビジネスを<br/>
+        もっと<span class="quote">「</span><span class="accent">伝わる</span><span class="quote">」</span><br/>
+        カタチに。
+      </h1>
+      <p class="lead">
+        Mintytechは越谷市を拠点に、Web制作とSaaS開発で<br/>
+        中小企業・個人事業主のビジネスを加速させるITパートナーです。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#contact">
+          無料で相談してみる
+          <span class="ic">✈</span>
+        </a>
+        <a class="btn-secondary" href="#services">
+          サービスを見る
+          <span class="ic">↓</span>
+        </a>
+      </div>
+      <div class="hero-dots" aria-hidden="true">
+        <span></span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-mint-bg"></div>
+      <img class="hero-cone" src="assets/icecream_hero_scoops.png" alt="ミントチョコアイス" style="top:50%;transform:translate(-50%,-50%);height:auto;width:90%;max-width:520px" />
+      <div class="hero-bubble">Webで<br/>ビジネスに<br/>ひんやり革命を。</div>
+      <svg class="hero-waves" viewBox="0 0 80 30" fill="none">
+        <path d="M2 8 Q 12 0, 22 8 T 42 8 T 62 8 T 78 8" stroke="#3d2418" stroke-width="1.5" fill="none"/>
+        <path d="M2 18 Q 12 10, 22 18 T 42 18 T 62 18 T 78 18" stroke="#3d2418" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Services -->
+<section id="services" class="section services">
+  <span class="section-num">02</span>
+  <h2 class="section-title">サービス紹介</h2>
+  <div class="services-inner">
+    <div class="blob-l"></div>
+    <div class="blob-r"></div>
+
+    <div class="svc-mock svc-mock-1"></div>
+    <div class="svc-content">
+      <div class="svc-head">
+        <span class="ic"><i class="fa-solid fa-display"></i></span>
+        <h3>Web制作</h3>
+      </div>
+      <p>企業サイト・LP・ECサイトまで、目的に合わせた「伝わる」Webサイトを制作します。</p>
+      <ul class="svc-list">
+        <li>企画・設計からサポート</li>
+        <li>スマホ対応・SEO対策</li>
+        <li>公開後の運用サポート</li>
+      </ul>
+    </div>
+
+    <div class="svc-content">
+      <div class="svc-head">
+        <span class="ic"><i class="fa-solid fa-code"></i></span>
+        <h3>SaaS開発</h3>
+      </div>
+      <p>業務効率化や新しい価値を生むSaaS・業務システムをオーダーメイドで開発します。</p>
+      <ul class="svc-list">
+        <li>業務の課題をヒアリング</li>
+        <li>スモールスタート可能</li>
+        <li>安心の保守・運用体制</li>
+      </ul>
+    </div>
+    <div class="svc-mock svc-mock-2"></div>
+  </div>
+</section>
+
+<!-- 03 Portfolio -->
+<section id="portfolio" class="section portfolio">
+  <span class="section-num">03</span>
+  <h2 class="section-title">制作実績</h2>
+  <div class="portfolio-inner">
+    <div class="pf-grid">
+      <div class="pf-item">
+        <div class="pf-thumb pf-thumb-1"></div>
+        <div class="pf-title">カフェのWebサイト</div>
+        <span class="pf-tag">Webサイト制作</span>
+      </div>
+      <div class="pf-item">
+        <div class="pf-thumb pf-thumb-2"></div>
+        <div class="pf-title">美容室のLP制作</div>
+        <span class="pf-tag">LP制作</span>
+      </div>
+      <div class="pf-item">
+        <div class="pf-thumb pf-thumb-3"></div>
+        <div class="pf-title">製造業のコーポレートサイト</div>
+        <span class="pf-tag">Webサイト制作</span>
+      </div>
+      <div class="pf-item">
+        <div class="pf-thumb pf-thumb-4"></div>
+        <div class="pf-title">業務管理SaaS開発</div>
+        <span class="pf-tag">SaaS開発</span>
+      </div>
+      <div class="pf-item">
+        <div class="pf-thumb pf-thumb-5"></div>
+        <div class="pf-title">オンラインショップ構築</div>
+        <span class="pf-tag">ECサイト構築</span>
+      </div>
+    </div>
+    <div class="pf-more">
+      <a class="btn-outline-mint" href="#">もっと見る<span class="arr">+</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 04 Strength -->
+<section id="strength" class="section strength">
+  <span class="section-num">04</span>
+  <div class="strength-inner">
+    <div>
+      <h2 class="section-title-left">Mintytechの強み</h2>
+      <div class="strength-feats">
+        <div class="sf">
+          <span class="ic"><i class="fa-solid fa-palette"></i></span>
+          <div class="ttl">デザイン × 機能性</div>
+          <div class="desc">見た目の美しさだけでなく、成果につながる設計を大切にしています。</div>
+        </div>
+        <div class="sf">
+          <span class="ic"><i class="fa-solid fa-handshake"></i></span>
+          <div class="ttl">伴走型サポート</div>
+          <div class="desc">企画から公開後まで、ビジネスの成長に寄り添うサポートを提供します。</div>
+        </div>
+        <div class="sf">
+          <span class="ic"><i class="fa-solid fa-rocket"></i></span>
+          <div class="ttl">スピード対応</div>
+          <div class="desc">小回りの利くフットワークで、スピーディーかつ柔軟に対応します。</div>
+        </div>
+        <div class="sf">
+          <span class="ic"><i class="fa-solid fa-location-dot"></i></span>
+          <div class="ttl">越谷市拠点の安心感</div>
+          <div class="desc">地域密着で、対面での相談や迅速な対応が可能です。</div>
+        </div>
+      </div>
+    </div>
+    <div class="strength-visual">
+      <img src="assets/strength_visual.png" alt="Mintytechの開発環境" />
+    </div>
+  </div>
+</section>
+
+<!-- 05 Price -->
+<section id="price" class="section price">
+  <span class="section-num">05</span>
+  <h2 class="section-title">料金プラン</h2>
+  <div class="price-inner">
+    <div class="price-grid">
+        <div class="p-card">
+          <div class="p-name">ライトプラン</div>
+          <div class="p-price">¥30,000<small>〜</small></div>
+          <div class="p-desc">シンプルなLP（ランディングページ）を制作します。</div>
+          <ul class="p-list">
+            <li>LPの作成</li>
+            <li>スマホ対応</li>
+            <li>お問い合わせフォーム</li>
+          </ul>
+          <a class="p-btn" href="#contact">詳細を見る<span class="arr">→</span></a>
+        </div>
+        <div class="p-card featured">
+          <div class="p-pop">おすすめ</div>
+          <div class="p-name">スタンダードプラン</div>
+          <div class="p-price">¥150,000<small>〜</small></div>
+          <div class="p-desc">集客・ブランディングに強い<br/>Webサイトを制作します。</div>
+          <ul class="p-list">
+            <li>トップページ＋下層6ページ</li>
+            <li>SEO内部対策</li>
+            <li>ブログ機能・更新サポート</li>
+          </ul>
+          <a class="p-btn" href="#contact">詳細を見る<span class="arr">→</span></a>
+        </div>
+        <div class="p-card">
+          <div class="p-name">SaaS開発プラン</div>
+          <div class="p-price" style="font-size:24px">要相談</div>
+          <div class="p-desc">業務効率化や新しい価値を生む<br/>SaaSを開発します。</div>
+          <ul class="p-list">
+            <li>要件定義・設計</li>
+            <li>開発・テスト</li>
+            <li>保守・運用サポート</li>
+          </ul>
+          <a class="p-btn" href="#contact">詳細を見る<span class="arr">→</span></a>
+        </div>
+    </div>
+    <p class="price-note">※料金は目安です。ご要望に応じてお見積もりいたします。</p>
+    <div class="price-cta-card">
+      まずはお気軽に<br/>ご相談ください！
+    </div>
+  </div>
+</section>
+
+<!-- 06 FAQ -->
+<section id="faq" class="section faq">
+  <span class="section-num">06</span>
+  <div class="faq-inner">
+    <div>
+      <h2 class="section-title-left">よくあるご質問</h2>
+      <div class="faq-leaves">
+        <!-- mint leaf SVG -->
+        <svg viewBox="0 0 200 200" style="width:100%;height:100%">
+          <g fill="#5cc4a6">
+            <path d="M100 40 Q 60 50, 50 100 Q 60 140, 100 150 Q 90 110, 100 40 Z"/>
+            <path d="M100 40 Q 140 50, 150 100 Q 140 140, 100 150 Q 110 110, 100 40 Z" fill="#46b89a"/>
+            <path d="M70 80 Q 40 100, 50 130 Q 70 140, 80 120 Q 75 100, 70 80 Z" fill="#7cd0b6"/>
+            <path d="M130 80 Q 160 100, 150 130 Q 130 140, 120 120 Q 125 100, 130 80 Z" fill="#7cd0b6"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-row">
+          <span class="faq-q">Q</span>
+          <span class="faq-text">相談や見積もりは無料ですか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <span class="a">A</span>
+          <span>はい、無料でご相談・お見積もりを承っております。お気軽にお問い合わせください。</span>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-row">
+          <span class="faq-q">Q</span>
+          <span class="faq-text">納期はどのくらいかかりますか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <span class="a">A</span>
+          <span>最短2週間からリリースできます！内容によって異なりますので、お気軽にご相談ください。</span>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-row">
+          <span class="faq-q">Q</span>
+          <span class="faq-text">公開後のサポートはありますか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <span class="a">A</span>
+          <span>はい、運用・保守サポートプランをご用意しています。</span>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-row">
+          <span class="faq-q">Q</span>
+          <span class="faq-text">越谷市外でも対応可能ですか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <span class="a">A</span>
+          <span>はい、全国対応可能です。オンラインでのお打ち合わせも可能です。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 Final CTA -->
+<section id="cta" class="final">
+  <div class="final-inner">
+    <span class="final-num">07</span>
+    <div>
+      <div class="final-text">あなたのビジネスに、ひんやり新しい風を。</div>
+      <div class="final-headline">
+        まずは無料で相談してみる
+        <span class="final-arrow">→</span>
+      </div>
+    </div>
+    <div>
+      <a class="final-cta" href="#contact">無料で相談する<span style="width:24px;height:24px;border-radius:50%;background:#fff;color:var(--brown-700);display:grid;place-items:center;font-size:14px">→</span></a>
+    </div>
+    <div class="final-cup">
+      <img src="assets/icecream_02_cup_mintytech.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<!-- 08 Contact -->
+<section id="contact" class="section contact">
+  <span class="section-num">08</span>
+  <h2 class="section-title">お問い合わせ</h2>
+  <div class="contact-inner">
+    <div>
+      <p class="contact-info-lead">
+        Webサイト制作やSaaS開発について、<br/>
+        まずはお気軽にご相談ください。<br/>
+        無料でお見積もりいたします。
+      </p>
+      <div class="contact-detail">
+        <div class="contact-row">
+          <span class="ic"><i class="fa-solid fa-location-dot"></i></span>
+          <span>埼玉県越谷市</span>
+        </div>
+        <div class="contact-row">
+          <span class="ic"><i class="fa-solid fa-envelope"></i></span>
+          <span>mintytech.aono@gmail.com</span>
+        </div>
+        <div class="contact-row">
+          <span class="ic"><i class="fa-solid fa-clock"></i></span>
+          <span>受付時間：平日 10:00〜18:00</span>
+        </div>
+        <div class="contact-row">
+          <span class="ic"><i class="fa-solid fa-comment-dots"></i></span>
+          <span>オンライン相談対応可</span>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-success" id="formSuccess">
+        <div class="check">✅</div>
+        お問い合わせありがとうございます！<br/>
+        <span style="font-size:13px;font-weight:400;color:var(--ink-soft)">2営業日以内にご連絡いたします。</span>
+      </div>
+      <div class="form-error-msg" id="formError">送信に失敗しました。時間をおいて再度お試しいただくか、メールにてご連絡ください。</div>
+      <div id="formFields">
+        <input type="hidden" name="_subject" value="【Mintytech】Webサイトからのお問い合わせ">
+        <input type="hidden" name="_language" value="ja">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">お名前<span class="req">*必須</span></label>
+            <input class="form-input" type="text" name="name" placeholder="山田 太郎" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">会社名・屋号</label>
+            <input class="form-input" type="text" name="company" placeholder="株式会社○○" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">メールアドレス<span class="req">*必須</span></label>
+          <input class="form-input" type="email" name="email" placeholder="example@mail.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">お問い合わせ種別<span class="req">*必須</span></label>
+          <div class="form-select-wrap">
+            <select class="form-select" name="type" required>
+              <option value="" disabled selected>選択してください</option>
+              <option>Webサイト制作について</option>
+              <option>LP制作について</option>
+              <option>SaaS・システム開発について</option>
+              <option>料金・見積もりについて</option>
+              <option>その他</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">お問い合わせ内容<span class="req">*必須</span></label>
+          <textarea class="form-textarea" name="message" placeholder="ご要望・ご質問をお気軽にお書きください。" required></textarea>
+        </div>
+        <button class="form-submit" type="submit">
+          送信する
+          <span class="arr">→</span>
+        </button>
+        <p class="form-note">送信内容は暗号化して送信されます。<br/><button type="button" id="openPrivacy" style="background:none;border:none;color:var(--mint-500);cursor:pointer;font-size:11px;text-decoration:underline;padding:0">プライバシーポリシー</button>に同意の上、送信してください。</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div class="logo">
+      <span class="logo-name">Mintytech</span>
+      <span class="logo-sub">埼玉県越谷市のITパートナー</span>
+    </div>
+    <nav class="nav">
+      <a href="#services">サービス</a>
+      <a href="#portfolio">制作実績</a>
+      <a href="#strength">強み</a>
+      <a href="#price">料金</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="foot-cta" href="#contact">無料で相談する<span class="arr">→</span></a>
+  </div>
+  <div class="copy">© 2025 Mintytech All Rights Reserved.</div>
+</footer>
+
+<script>
+// --- Header scroll shadow ---
+const header = document.querySelector('.header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 10);
+}, { passive: true });
+
+// --- Hamburger menu ---
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+document.querySelectorAll('.mobile-nav-link, .mobile-nav .btn-cta').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+// --- FAQ smooth accordion (one open at a time) ---
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+// --- Scroll reveal ---
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+function addReveal(selector, direction, staggerParent) {
+  document.querySelectorAll(selector).forEach((el, i) => {
+    el.classList.add('reveal');
+    if (direction) el.classList.add(direction);
+    if (staggerParent) {
+      const siblings = el.parentElement.querySelectorAll(selector);
+      const idx = Array.from(siblings).indexOf(el);
+      if (idx > 0) el.style.transitionDelay = idx * 90 + 'ms';
+    }
+    revealObserver.observe(el);
+  });
+}
+
+addReveal('.hero-eyebrow');
+addReveal('.hero h1');
+addReveal('.hero p.lead');
+addReveal('.hero-actions');
+addReveal('.hero-visual', 'from-right');
+addReveal('.section-title');
+addReveal('.section-title-left');
+addReveal('.svc-mock', 'from-left');
+addReveal('.svc-content', 'from-right');
+addReveal('.pf-item', null, true);
+addReveal('.sf', null, true);
+addReveal('.strength-visual', 'from-right');
+addReveal('.p-card', null, true);
+addReveal('.faq-item', null, true);
+
+document.querySelectorAll('.final-inner > *').forEach((el, i) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = i * 100 + 'ms';
+  revealObserver.observe(el);
+});
+
+addReveal('.contact-info-lead');
+addReveal('.contact-row', null, true);
+addReveal('.contact-form');
+
+// --- Contact form submit (Formspree) ---
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', async e => {
+    e.preventDefault();
+    const fields = contactForm.querySelectorAll('[required]');
+    let valid = true;
+    fields.forEach(f => {
+      f.classList.remove('error');
+      if (!f.value.trim()) { f.classList.add('error'); valid = false; }
+    });
+    if (!valid) return;
+
+    const submitBtn = contactForm.querySelector('.form-submit');
+    const errorMsg = document.getElementById('formError');
+    submitBtn.disabled = true;
+    submitBtn.textContent = '送信中...';
+    errorMsg.classList.remove('visible');
+
+    try {
+      const res = await fetch('https://formspree.io/f/mykopdva', {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        document.getElementById('formFields').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      } else {
+        throw new Error('send failed');
+      }
+    } catch {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '送信する <span class="arr">→</span>';
+      errorMsg.classList.add('visible');
+    }
+  });
+
+  contactForm.querySelectorAll('[required]').forEach(f => {
+    f.addEventListener('input', () => f.classList.remove('error'));
+  });
+}
+
+// --- Privacy policy modal ---
+const privacyModal = document.getElementById('privacyModal');
+document.getElementById('openPrivacy').addEventListener('click', () => {
+  privacyModal.classList.add('open');
+});
+document.getElementById('privacyClose').addEventListener('click', () => {
+  privacyModal.classList.remove('open');
+});
+privacyModal.addEventListener('click', e => {
+  if (e.target === privacyModal) privacyModal.classList.remove('open');
+});
+
+// --- Smooth scroll for anchor links ---
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
